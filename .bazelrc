@@ -1,0 +1,4 @@
+build \
+    --host_javabase=@bazel_tools//tools/jdk:remote_jdk11 \
+    --javabase=@bazel_tools//tools/jdk:remote_jdk11 \
+    --javacopt="--release 11" #--nojava_header_compilation
