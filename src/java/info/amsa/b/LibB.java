@@ -1,6 +1,7 @@
 package info.amsa.b;
 
 import java.io.FileInputStream;
+import java.util.function.Consumer;
 
 import lombok.Data;
 
@@ -12,6 +13,8 @@ public class LibB {
     public void doJava11() {
         var f = this.field1;
         System.out.println(f);
+
+        Consumer<String> printer = (var s) -> System.out.println(s);
 
         FileInputStream i;
         try {
